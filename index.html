@@ -75,6 +75,8 @@
 	<!-- Google Review Badge by Shapo.io -->
 	<script src="https://cdn.shapo.io/js/google-badge-loader.js" data-settings="eyJwbGFjZUlkIjoiQ2hJSlVXRXVrem9WcmpzUnFXSjZQVlNwck53IiwicGxhY2VOYW1lIjoiU2FydGhhayBZb2dhIiwicGxhY2VBZGRyZXNzIjoiMjU0LCAxN3RoIENyb3NzLCA1dGggTWFpbiBSZCwgU2VjdG9yIDYsIEhTUiBMYXlvdXQsIEJlbmdhbHVydSwgS2FybmF0YWthIDU2MDEwMiwgSW5kaWEiLCJyYXRpbmciOjQuOSwicmV2aWV3Q291bnQiOjM1LCJwb3NpdGlvbiI6ImJvdHRvbS1sZWZ0IiwidGVtcGxhdGUiOiJtb2Rlcm4iLCJidXR0b25UZXh0IjoiTGVhdmUgYSBSZXZpZXciLCJidXR0b25Db2xvciI6IiMzRDRBM0IiLCJyZXZpZXdzIjpbeyJhdXRob3JOYW1lIjoiUnVzaGFsaSBTdXJhbmEiLCJhdXRob3JQaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0t0bUhsa2tHTUY0ZEVwSnZMQ2NqeFJMNWQyYzdudkRyQW5CZlBxSUFSdG9zUkM9czEyOC1jMHgwMDAwMDAwMC1jYy1ycC1tbyIsInJhdGluZyI6MCwidGV4dCI6IiJ9LHsiYXV0aG9yTmFtZSI6IlJhamVzaCBPamhhIiwiYXV0aG9yUGhvdG9VcmwiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NLRnNCeUtOcFM4QlROY0hkS2FLaGY1Nzcya2Z3NlJHbFl1WUozMmJzcVhKUVdzcmc9czEyOC1jMHgwMDAwMDAwMC1jYy1ycC1tbyIsInJhdGluZyI6MCwidGV4dCI6IiJ9LHsiYXV0aG9yTmFtZSI6IkNoYWl0cmEgQWNoYXIiLCJhdXRob3JQaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0pEeEJ0dWJlaVl5c3owUUFLQUpBb1pfaGJ4VjZjTzNnc0lnQ09pR3ZnM0hVWkZObDQ9czEyOC1jMHgwMDAwMDAwMC1jYy1ycC1tbyIsInJhdGluZyI6MCwidGV4dCI6IiJ9LHsiYXV0aG9yTmFtZSI6ImJoYXZhbmEgYmhhZ2F2YXQiLCJhdXRob3JQaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0xiaF9uZ2xpRXZic0NqSFI3WFc4UEdPc0VaOEpMLXhrMWFPZlhkS0VZZHNYNWN5QT1zMTI4LWMweDAwMDAwMDAwLWNjLXJwLW1vIiwicmF0aW5nIjowLCJ0ZXh0IjoiIn0seyJhdXRob3JOYW1lIjoiSmF5YSBTYW55YWwiLCJhdXRob3JQaG90b1VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0ljN0owZXJheGc0eTd4RWl0VkM4ZHBCQzljc01tOGxwTFY5WXlMNC1ralA2aXFSZz1zMTI4LWMweDAwMDAwMDAwLWNjLXJwLW1vIiwicmF0aW5nIjowLCJ0ZXh0IjoiIn1dfQ=="></script>
 	
+    <!-- Custom Pricing Styles -->
+	<link rel="stylesheet" href="css/pricing-styles.css">
 	<!-- Hide Shapo Attribution -->
 	<style>
 		/* Hide the "Powered by Shapo" attribution */
@@ -104,6 +106,26 @@
 		/* Target any element containing "Powered by" text */
 		*:contains("Powered by") {
 			display: none !important;
+		}
+
+		/* Fix Footer White Spaces */
+		.footer-main {
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+		
+		#footer-placeholder {
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+		
+		body {
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+		
+		.container-fluid {
+			padding: 0 !important;
 		}
 	</style>
 	
@@ -1010,165 +1032,168 @@
     </div>
     <!-- How It Work Section End -->
 
-    <!-- Our Features Section Start -->
    
-    <!-- Our Features Section End -->
 
-    <!-- Our Pricing Section Start -->
-    <div class="our-pricing" id="pricing">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-6">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">our pricing</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Flexible Services For Yoga  <span>and Meditation</span></h2>
-                    </div>
-                    <!-- Section Title End -->
+    <!-- Mobile Responsive CSS -->
+    <style>
+        @media (max-width: 768px) {
+            .pricing-row {
+                flex-direction: column !important;
+                gap: 20px !important;
+            }
+            .pricing-category > div:first-of-type {
+                min-width: auto !important;
+                margin-bottom: 20px !important;
+            }
+            .pricing-category h4 {
+                font-size: 1.5rem !important;
+            }
+            .pricing-category p {
+                font-size: 1rem !important;
+            }
+            .pricing-card h5 {
+                font-size: 1.2rem !important;
+            }
+            .pricing-card .price-main {
+                font-size: 2rem !important;
+            }
+            .category-header {
+                max-width: 90% !important;
+                padding: 18px !important;
+                font-size: 1.1rem !important;
+            }
+        }
+        @media (max-width: 480px) {
+            .pricing-row > div {
+                padding: 20px 15px !important;
+            }
+            .pricing-card {
+                padding: 20px !important;
+                min-width: 180px !important;
+            }
+            .pricing-card .price-main {
+                font-size: 1.8rem !important;
+            }
+            .category-header {
+                max-width: 95% !important;
+                padding: 15px !important;
+                font-size: 1rem !important;
+                margin: 0 auto 30px auto !important;
+            }
+            .pricing-category {
+                padding: 20px 10px !important;
+                margin: 10px 0 !important;
+            }
+        }
+    </style>
+
+    <!-- Pricing Section Start -->
+    <div class="pricing-section">
+        <div class="container-pricing">
+            <!-- Section Title -->
+            <div class="pricing-main-title">
+                <h2 class="wow fadeInUp">Our <span>Promise</span> to You</h2>
+                <h3 class="wow fadeInUp" data-wow-delay="0.25s" style="max-width: 800px; margin: 0 auto;">We can promise relief from old back pain, neck pain, knee pain, weight loss, hypertension and much more through our proven yoga practices!
+
+                </h3>
                 </div>
 
-                <div class="col-lg-6">
-                    <!-- Section Title Content Start -->
-                    <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                        <p>Choose from our flexible Services designed to suit your needs. Whether you're a beginner or advanced practitioner, we offer affordable.</p>
-                    </div>
-                    <!-- Section Title Content End -->
-                </div>
+            <!-- Combined Group Classes Section -->
+            <div class="pricing-category wow fadeInUp" style=" background: #f8f9fa; margin: 10px 0;">
+                <div class="category-header" style="background: linear-gradient(135deg, #6c7b7f 0%, #5a6c57 100%); color: white; padding: 20px; border-radius: 25px; text-align: center; font-size: 1.2rem; font-weight: 600; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    Choose Your Perfect Yoga Experience – In-Studio or Virtual Classes
             </div>            
 
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Item Start -->
-                    <div class="pricing-item wow fadeInUp">
-                        <!-- Pricing Image Start -->
-                        <div class="pricing-image">
-                            <figure class="image-anime">
-                                <img src="images/yogaimg8.png" alt="">
-                            </figure>
+                <div class="pricing-row" style="display: flex; gap: 20px; justify-content: center; max-width: 1400px; margin: 0 auto; padding: 0 20px; flex-wrap: wrap;">
+                    
+                    <!-- In-Studio Classes Section -->
+                    <div style="flex: 1; min-width: 300px; background: #f5f5f5; padding: 40px 20px; border-radius: 20px; text-align: center;">
+                        <div style="margin-bottom: 30px;">
+                            <h4 style="color: #6c7b7f; font-size: 1.8rem; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 10px;">🏢 In-Studio Classes</h4>
+                            <p style="color: #666; font-size: 1.1rem; margin: 0;">Immerse yourself in the energy of in-person yoga</p>
                         </div>
-                        <!-- Pricing Image End -->
-
-                        <!-- Pricing Content Start -->
-                        <div class="pricing-content">
-                            <div class="pricing-title">
-                                <h3>Individual Yoga</h3>
+                        
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <!-- 1 Month In-Studio -->
+                            <div style="background: white; border-radius: 15px; padding: 25px; flex: 1; min-width: 200px; max-width: 280px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                <h5 style="font-size: 1.4rem; color: #333; margin-bottom: 20px; font-weight: 600;">1 Month</h5>
+                                <div style="background: #6c7b7f; color: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                                    <div style="font-size: 2.5rem; font-weight: bold;">₹3,000</div>
+                            </div>
+                                <p style="color: #999; font-size: 0.9rem; margin-bottom: 10px;">+ ₹500 registration</p>
+                                <p style="color: #666; font-style: italic; margin-bottom: 25px; font-size: 1rem;">Perfect for beginners</p>
+                                <a href="#contact-us-form" style="background: #6c7b7f; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; width: 80%;">Contact Us</a>
+                        </div>
+                            
+                            <!-- 3 Months In-Studio (Popular) -->
+                            <div style="background: white; border-radius: 15px; padding: 30px; flex: 1; max-width: 280px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 3px solid #00c851; position: relative;">
+                                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #00c851; color: white; padding: 8px 25px; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">Popular</div>
+                                <h5 style="font-size: 1.4rem; color: #333; margin-bottom: 20px; font-weight: 600;">3 Months</h5>
+                                <div style="background: #6c7b7f; color: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                                    <div style="font-size: 2.5rem; font-weight: bold;">₹8,000</div>
+                            </div>
+                                <p style="color: #999; font-size: 0.9rem; margin-bottom: 10px;">+ ₹500 registration</p>
+                                <p style="color: #666; font-style: italic; margin-bottom: 25px; font-size: 1rem;">Build consistency</p>
+                                <a href="#contact-us-form" style="background: #6c7b7f; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; width: 80%;">Contact Us</a>
                             </div>
                         </div>
-                        <!-- Pricing Content End -->
-
-                        <!-- Pricing Body Start -->
-                        <div class="pricing-body">
-                            <!-- Pricing List Start -->
-                            <div class="pricing-list">
-                                <ul>
-                                    <li>Personal Yoga Sessions</li>
-                                    <li>One-on-One Instruction</li>
-                                    <li>Customized Practice Plans</li>
-                                    <li>Flexible Scheduling</li>
-                                </ul>
-                            </div>
-                            <!-- Pricing List End -->
-
-                            <!-- Pricing Button Start -->
-                            <div class="pricing-btn">
-                                <a href="#contact-us-form" class="btn-default">get started now</a>
-                            </div>
-                            <!-- Pricing Button End -->
-                        </div>
-                        <!-- Pricing Body End -->                   
-                    </div>
-                    <!-- Pricing Item End -->
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Item Start -->
-                    <div class="pricing-item highlighted-box wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Pricing Image Start -->
-                        <div class="pricing-image">
-                            <figure class="image-anime">
-                                <img src="images/yogaimg9.png" alt="">
-                            </figure>
+                    <!-- Online Classes Section -->
+                    <div style="flex: 1; min-width: 300px; background: #f5f5f5; padding: 40px 20px; border-radius: 20px; text-align: center;">
+                        <div style="margin-bottom: 30px;">
+                            <h4 style="color: #8e44ad; font-size: 1.8rem; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; gap: 10px;">💻 Online Classes</h4>
+                            <p style="color: #666; font-size: 1.1rem; margin: 0;">Reconnect with yourself through guided virtual sessions</p>
                         </div>
-                        <!-- Pricing Image End -->
-
-                        <!-- Pricing Content Start -->
-                        <div class="pricing-content">
-                            <div class="pricing-title">
-                                <h3>Group Yoga</h3>
+                        
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <!-- 1 Month Online -->
+                            <div style="background: white; border-radius: 15px; padding: 25px; flex: 1; min-width: 200px; max-width: 280px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                                <h5 style="font-size: 1.4rem; color: #333; margin-bottom: 20px; font-weight: 600;">1 Month</h5>
+                                <div style="background: #8e44ad; color: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                                    <div style="font-size: 2.5rem; font-weight: bold;">₹1,000</div>
+                            </div>
+                                <p style="color: #00c851; font-size: 1rem; margin-bottom: 10px; font-weight: 600;">₹900 with YOGM10</p>
+                                <p style="color: #666; font-style: italic; margin-bottom: 25px; font-size: 1rem;">Flexible online learning</p>
+                                <a href="#contact-us-form" style="background: #8e44ad; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; width: 80%;">Contact Us</a>
+                        </div>
+                            
+                            <!-- 3 Months Online (Popular) -->
+                            <div style="background: white; border-radius: 15px; padding: 30px; flex: 1; max-width: 280px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 3px solid #00c851; position: relative;">
+                                <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: #00c851; color: white; padding: 8px 25px; border-radius: 20px; font-size: 0.9rem; font-weight: 600;">Popular</div>
+                                <h5 style="font-size: 1.4rem; color: #333; margin-bottom: 20px; font-weight: 600;">3 Months</h5>
+                                <div style="background: #8e44ad; color: white; padding: 20px; border-radius: 10px; margin-bottom: 15px;">
+                                    <div style="font-size: 2.5rem; font-weight: bold;">₹2,000</div>
+                            </div>
+                                <p style="color: #00c851; font-size: 1rem; margin-bottom: 10px; font-weight: 600;">₹1,800 with YOGM10</p>
+                                <p style="color: #666; font-style: italic; margin-bottom: 25px; font-size: 1rem;">Build your practice</p>
+                                <a href="#contact-us-form" style="background: #8e44ad; color: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; width: 80%;">Contact Us</a>
                             </div>
                         </div>
-                        <!-- Pricing Content End -->
-
-                        <!-- Pricing Body Start -->
-                        <div class="pricing-body">
-                            <!-- Pricing List Start -->
-                            <div class="pricing-list">
-                                <ul>
-                                    <li>Weekly Group Yoga Classes</li>
-                                    <li>Community Practice Sessions</li>
-                                    <li>Group Energy & Motivation</li>
-                                    <li>Social Yoga Experience</li>
-                                </ul>
-                            </div>
-                            <!-- Pricing List End -->
-
-                            <!-- Pricing Button Start -->
-                            <div class="pricing-btn">
-                                <a href="#contact-us-form" class="btn-default btn-highlighted">get started now</a>
-                            </div>
-                            <!-- Pricing Button End -->
-                        </div>
-                        <!-- Pricing Body End -->
                     </div>
-                    <!-- Pricing Item End -->
                 </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Pricing Item Start -->
-                    <div class="pricing-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Pricing Image Start -->
-                        <div class="pricing-image">
-                            <figure class="image-anime">
-                                <img src="images/yogaimg10.png" alt="">
-                            </figure>
                         </div>
-                        <!-- Pricing Image End -->
-
-                        <!-- Pricing Content Start -->
-                        <div class="pricing-content">
-                            <div class="pricing-title">
-                                <h3>Premium Yoga</h3>
+            <div class="discount-banner-enhanced wow fadeInUp" data-wow-delay="0.25s">
+                <div class="discount-content">
+                    <div class="discount-text">
+                        
+                        <h3>Special Online Class Discount!</h3>
+                        <p>Get 10% OFF with coupon code:</p>
+                            </div>
+                    <div class="coupon-section">
+                        <div class="coupon-input-wrapper">
+                            <input type="text" id="discountCode" value="YOGM10" readonly class="coupon-input">
+                            <button onclick="copyDiscountCode()" class="copy-button" id="copyBtn">
+                                <i class="fa fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <a href="#contact-us-form" onclick="useDiscountCode()" class="use-code-button" style="display: inline-block; text-decoration: none;">
+                            <i class="fa fa-shopping-cart"></i> Use Code Now
+                        </a>
+                            </div>
                             </div>
                         </div>
-                        <!-- Pricing Content End -->
-
-                        <!-- Pricing Body Start -->
-                        <div class="pricing-body">
-                            <!-- Pricing List Start -->
-                            <div class="pricing-list">
-                                <ul>
-                                    <li>Advanced Yoga Techniques</li>
-                                    <li>Specialized Workshops</li>
-                                    <li>Private & Group Sessions</li>
-                                    <li>Comprehensive Yoga Programs</li>
-                                </ul>
-                            </div>
-                            <!-- Pricing List End -->
-
-                            <!-- Pricing Button Start -->
-                            <div class="pricing-btn">
-                                <a href="#contact-us-form" class="btn-default">get started now</a>
-                            </div>
-                            <!-- Pricing Button End -->
-                        </div>
-                        <!-- Pricing Body End -->
-                    </div>
-                    <!-- Pricing Item End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Pricing Section End -->
+    
 
     <!-- Scrolling Ticker Start -->
     <div class="scrolling-ticker">
@@ -1710,30 +1735,30 @@
 
                     <!-- Contact Form Start -->
                     <div class="contact-form" id="contact-us-form">
-                        <form id="contactForm" action="https://formspree.io/f/xwpqnnpq" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
+                    <form id="contactForm" action="https://formspree.io/f/mvgqdpyw" method="POST" data-toggle="validator" class="wow fadeInUp" data-wow-delay="0.2s">
                             <div class="row">                                
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="fname" class="form-control" id="fname" placeholder="First name" required>
+                                <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Full Name" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="lname" class="form-control" id="lname" placeholder="Last name" required>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="E-mail Address" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="E-mail" required>
+                                <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone Number" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone" required>
+                                <input type="text" name="coupon" class="form-control" id="coupon" placeholder="Coupon Code (Optional)">
                                     <div class="help-block with-errors"></div>
                                 </div>
 
                                 <div class="form-group col-md-12 mb-5">
-                                    <textarea name="message" class="form-control" id="message" rows="3" placeholder="Write Message..."></textarea>
+                                <textarea name="message" class="form-control" id="message" rows="3" placeholder="Service Required ..." required></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
 
@@ -1788,5 +1813,64 @@
     <script src="js/function.js"></script>
     <!-- Component Loader Script -->
     <script src="js/components.js"></script>
+
+
+<!-- Discount Banner JavaScript -->
+<script>
+    // Discount Banner Functions
+    function copyDiscountCode() {
+        const codeInput = document.getElementById('discountCode');
+        const copyBtn = document.getElementById('copyBtn');
+        
+        // Select and copy the text
+        codeInput.select();
+        codeInput.setSelectionRange(0, 99999); // For mobile devices
+        
+        try {
+            document.execCommand('copy');
+            
+            // Visual feedback
+            copyBtn.classList.add('copied');
+            copyBtn.innerHTML = '<i class="fa fa-check"></i> Copied!';
+            
+            // Reset after 2 seconds
+            setTimeout(() => {
+                copyBtn.classList.remove('copied');
+                copyBtn.innerHTML = '<i class="fa fa-copy"></i> Copy';
+            }, 2000);
+            
+        } catch (err) {
+            // Fallback for older browsers
+            alert('Coupon code copied: YOGM10');
+        }
+    }
+
+    function useDiscountCode() {
+        // Scroll to the first online pricing card smoothly
+        const onlineSection = document.querySelector('.row').nextElementSibling;
+        if (onlineSection && onlineSection.querySelector('.row')) {
+            onlineSection.querySelector('.row').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+            
+            // Add a subtle highlight effect to online cards
+            const onlineCards = onlineSection.querySelectorAll('.pricing-card');
+            onlineCards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.transform = 'scale(1.02)';
+                    card.style.boxShadow = '0 8px 30px rgba(108, 92, 231, 0.3)';
+                    card.style.transition = 'all 0.3s ease';
+                    
+                    setTimeout(() => {
+                        card.style.transform = '';
+                        card.style.boxShadow = '';
+                    }, 2000);
+                }, index * 100);
+            });
+        }
+    }
+</script>
+
 </body>
 </html>

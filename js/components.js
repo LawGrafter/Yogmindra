@@ -112,8 +112,8 @@ const footerContent = `
                 <div class="footer-links footer-contact-links">
                     <h3>Contact</h3>
                     <ul>
-                        <li><a href="tel:918318919787">+91 8318919787</a></li>
-                        <li><a href="yogmindra@gmail.com">yogmindra@gmail.com</a></li>
+                        <li><a href="tel:+918318919787">+91 8318919787</a></li>
+                        <li><a href="mailto:yogmindra@gmail.com">yogmindra@gmail.com</a></li>
                         <li> HSR Layout, Bengaluru, Karnataka 560102</li>
                     </ul>
                 </div>
@@ -188,8 +188,33 @@ function loadComponents() {
     if (footerElement) {
         footerElement.innerHTML = footerContent;
         console.log('Footer loaded successfully');
+        
+        // Reinitialize any footer-specific scripts if needed
+        initializeFooterScripts();
     } else {
         console.error('Footer placeholder element not found');
+    }
+}
+
+// Function to initialize footer-specific scripts
+function initializeFooterScripts() {
+    // Reinitialize any animations or scripts that might be needed for the footer
+    if (typeof WOW !== 'undefined') {
+        const wow = new WOW();
+        wow.init();
+    }
+    
+    // Newsletter form handling
+    const newsletterForm = document.getElementById('newsletterForm');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('mail').value;
+            if (email) {
+                alert('Thank you for subscribing! We will keep you updated with yoga tips and inspiration.');
+                this.reset();
+            }
+        });
     }
 }
 
